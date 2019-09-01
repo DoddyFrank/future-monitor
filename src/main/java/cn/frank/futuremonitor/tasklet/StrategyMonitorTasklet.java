@@ -12,13 +12,13 @@ import org.springframework.stereotype.Service;
 //注意，这里要是实盘记得把DemoTasklet的Service注解注释掉，否则单例模式的isTesting设置会有问题
 @Service
 @Slf4j
-public class StrategyTasklet {
+public class StrategyMonitorTasklet {
 
     private final StrategyMonitor strategyMonitor;
 
 
     @Autowired
-    public StrategyTasklet(StrategyMonitor strategyMonitor) {
+    public StrategyMonitorTasklet(StrategyMonitor strategyMonitor) {
         this.strategyMonitor = strategyMonitor;
     }
 
